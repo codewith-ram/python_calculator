@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="calculator">
+        <div class="toolbar">
+            <button id="theme-toggle" title="Toggle theme">Theme</button>
+            <button id="copy-result" title="Copy result">Copy</button>
+        </div>
+        <div class="display">
+            <div class="previous-operand" data-previous-operand></div>
+            <div class="current-operand" data-current-operand>0</div>
+        </div>
+        <div class="buttons-grid">
+            <button data-memory="mc">MC</button>
+            <button data-memory="mr">MR</button>
+            <button data-memory="mplus">M+</button>
+            <button data-memory="mminus">M-</button>
+
+            <button class="span-two" data-all-clear>AC</button>
+            <button data-delete>DEL</button>
+            <button data-action="negate">±</button>
+            <button data-action="percent">%</button>
+
+            <button data-action="sqrt">√</button>
+            <button data-action="square">x²</button>
+            <button data-action="reciprocal">1/x</button>
+            <button data-operation>÷</button>
+            <button data-number>7</button>
+            <button data-number>8</button>
+            <button data-number>9</button>
+            <button data-operation>×</button>
+            <button data-number>4</button>
+            <button data-number>5</button>
+            <button data-number>6</button>
+            <button data-operation>-</button>
+            <button data-number>1</button>
+            <button data-number>2</button>
+            <button data-number>3</button>
+            <button data-operation>+</button>
+            <button data-number class="span-two">0</button>
+            <button data-number>.</button>
+            <button data-equals>=</button>
+        </div>
+
+        <div class="history">
+            <div class="history-header">
+                <span>History</span>
+                <div class="history-actions">
+                    <button class="history-export" id="export-history" title="Export history">Export</button>
+                    <button class="history-clear" id="clear-history" title="Clear history">Clear</button>
+                </div>
+            </div>
+            <ul class="history-list" id="history-list"></ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
